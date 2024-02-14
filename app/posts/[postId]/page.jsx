@@ -14,19 +14,19 @@ async function Page({ params }) {
       </p>
       {post && (
         <div>
-          <h3>{post.title}</h3>
+          <h2>{post.title}</h2>
           <img
             src={post.image}
             alt={post.title}
             style={{
-              width: "200px",
-              height: "200px",
+              width: "300px",
+              height: "300px",
               padding: "10px",
               margin: "10px",
             }}
           />
-          <p>{post.description}</p>
-          <h3>${post.price}</h3>
+          <p><strong>Description: </strong>{post.description}</p>
+          <h2>${post.price}</h2>
           <p>{post.category}</p>
         </div>
       )}
