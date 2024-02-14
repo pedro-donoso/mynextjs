@@ -17,7 +17,7 @@ async function PostPages() {
             border: "1px solid #0000ff",
             padding: "20px",
             margin: "10px",
-            background: "#ccc",
+            backgroundImage: "linear-gradient(to bottom right, #ffff00, #ffa500)"
           }}
         >
           <div style={{ color: "#0000ff" }}>
