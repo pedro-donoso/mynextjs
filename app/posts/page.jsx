@@ -1,6 +1,9 @@
 async function loadPosts() {
   const res = await fetch("https://fakestoreapi.com/products");
   const data = await res.json();
+
+  
+
   return data;
 }
 
@@ -35,13 +38,13 @@ async function PostPages() {
             />
 
 <div style={{color: "#404040"}}>
-   <p>{post.description}</p>
+   <p><strong>Description:</strong> {post.description}</p>
 </div>
 
 
           </div>
           <h3 style={{ margin: "10px", color: "#0000ff" }}>${post.price}</h3>
-          <h4 style={{ color: "#ff00ff" }}>Category: {post.category}</h4>
+          <p style={{ color: "#ff00ff" }}><strong>Category:</strong> {post.category}</p>
 
         
 

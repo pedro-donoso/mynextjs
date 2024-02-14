@@ -11,7 +11,7 @@ export default function TiendaLayout({ children }) {
         <h3>Sección Tienda</h3>
         <ul>
         <li>
-            <Link href='/posts/'>Posts</Link>
+            <Link href='/posts/'>Productos</Link>
           </li>
           <li>
             <Link href='/tienda/categorias/'>Categorías</Link>
