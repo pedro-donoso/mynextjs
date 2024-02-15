@@ -16,6 +16,7 @@ async function PostPages() {
     >
       {posts.map((post) => (
 
+        // eslint-disable-next-line react/jsx-key
         <div style={{
         padding: "20px",
         margin: "20px",
