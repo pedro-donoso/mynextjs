@@ -1,7 +1,7 @@
 function LoadingPage() {
     return (
         <div>
-            <h2>Cargando Productos...</h2>
+            <h2>Cargando Posts...</h2>
         </div>
     )
 }
