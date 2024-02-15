@@ -1,4 +1,3 @@
-![posteos](https://github.com/pedro-donoso/mynextjs/assets/68760595/e0c5989c-7b3c-42c4-8b73-7bdce7efc459)
-
+![enlaces](https://github.com/pedro-donoso/mynextjs/assets/68760595/ad25d226-3d1b-4c47-816f-934c3926e46f)
 
 ### https://proyecto-nextjs.netlify.app
