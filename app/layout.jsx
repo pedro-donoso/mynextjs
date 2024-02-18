@@ -1,6 +1,6 @@
-import Navbar from '../components/Navbar';
-import PostCard from '../components/PostCard';
+import Navbar from '@/Navbar';
 import { Roboto } from "next/font/google"
+import "./globals.css"
 
 export const metadata = {
   title: "Mi App con Nextjs",
@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
     <html>
       <body className={roboto.className}>
        <Navbar />
-       <PostCard />
         {children}
         </body>
     </html>
