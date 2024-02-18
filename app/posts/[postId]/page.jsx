@@ -11,7 +11,13 @@ async function Page({ params }) {
   const post = await loadPost(params.postId);
 
   return (
-    <div>
+    <div
+      style={{
+        padding: "20px",
+        backgroundImage: "linear-gradient(to bottom right, #ffff00, #ffa500)",
+        border: "1px solid #000",
+      }}
+    >
       <p>
         Estás viendo la Publicación <strong>N°{params.postId}</strong>{" "}
       </p>
