@@ -1,5 +1,4 @@
-import Navbar from '../components/Navbar';
-import PostCard from '../components/PostCard';
+import Navbar from '@/Navbar';
 import { Roboto } from "next/font/google"
 
 export const metadata = {
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
     <html>
       <body className={roboto.className}>
        <Navbar />
-       <PostCard />
         {children}
         </body>
     </html>
