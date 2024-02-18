@@ -8,7 +8,7 @@ function PostCard({ post }){
       }
 
       return (
-        <div>
+        <div className="bg-gray-950 p-10">
           <h2>
             <Link href={`/posts/${post.id}`}>
               {post.id}. {post.title}
