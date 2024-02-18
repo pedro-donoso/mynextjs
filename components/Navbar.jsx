@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <Link href="/">
-      <h1>Nextjs Curso</h1>
+      <h1 class>Nextjs Curso</h1>
       </Link>
       
       <ul>
