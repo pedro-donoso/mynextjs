@@ -11,36 +11,31 @@ async function Page({ params }) {
   const post = await loadPost(params.postId);
 
   return (
-    <div
-      style={{
-        padding: "20px",
-        backgroundImage: "linear-gradient(to bottom right, #ffff00, #ffa500)",
-        border: "1px solid #000",
-      }}
-    >
-      <p>
-        Estás viendo la Publicación <strong>N°{params.postId}</strong>{" "}
-      </p>
-      {post && (
+    <div className="p-5">
+    <p className="text-yellow-500">
+        Estás viendo la Publicación <strong className="font-bold">N°{params.postId}</strong>{" "}
+    </p>
+    {post && (
         <div>
-          <h2>
-            {post.id}. {post.title}
-          </h2>
-          <p>
-            <strong>Description: </strong>
-            {post.body}
-          </p>
+            <h2 className="text-xl font-bold mb-2">
+                {post.id}. {post.title}
+            </h2>
+            <p className="text-gray-100">
+                <strong className="font-bold">Description: </strong>
+                {post.body}
+            </p>
 
-          <hr />
+            <hr className="my-4 border-gray-300" />
 
-          <h3>Otras Publicaciones</h3>
+            <h3 className="text-lg font-bold mb-2">Otras Publicaciones: </h3>
 
-          <Suspense fallback={<div>Cargando Publicaciones...</div>}>
-            <Posts />
-          </Suspense>
+            <Suspense fallback={<div>Cargando Publicaciones...</div>}>
+                <Posts />
+            </Suspense>
         </div>
-      )}
-    </div>
+    )}
+</div>
+
   );
 }
 
