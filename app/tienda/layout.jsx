@@ -6,22 +6,23 @@ export const metadata = {
 
 export default function TiendaLayout({ children }) {
   return (
-    <div>
-      <nav>
-        <h3>Sección Tienda</h3>
-        <ul>
-        <li>
-            <Link href='/posts/'>Posts</Link>
-          </li>
-          <li>
-            <Link href='/tienda/categorias/'>Categorías</Link>
-          </li>
-          <li>
-            <Link href='/tienda/categorias/computadoras/'>Computadoras</Link>
-          </li>
+    <div className="p-4 bg-indigo-300">
+    <nav className="mb-4">
+        <h3 className="text-lg font-bold mb-2 text-gray-950">Sección Tienda</h3>
+        <ul className="flex space-x-4">
+            <li>
+                <Link href="/posts/" className="text-gray-950 hover:text-blue-700">Posts</Link>
+            </li>
+            <li>
+                <Link href="/tienda/categorias/" className="text-gray-950 hover:text-blue-700">Categorías</Link>
+            </li>
+            <li>
+                <Link href="/tienda/categorias/computadoras/" className="text-gray-950 hover:text-blue-700">Computadoras</Link>
+            </li>
         </ul>
-      </nav>
-      {children}
-    </div>
+    </nav>
+    {children}
+</div>
+
   );
 }
